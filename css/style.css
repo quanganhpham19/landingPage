@@ -19,6 +19,20 @@
    --product-price-color-text:#ed1c24;
    --logo-heght:30px
 }
+
+@media (min-width: 992px) {
+  .carousel-item img{
+  height: 100px;
+  width: auto;
+  border-radius: 10px;
+}			
+}
+@media (min-width: 768px) {
+    .carousel-item img{
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+}}
 .form-floating>.form-select {
     padding-top: 1.625rem;
     padding-bottom: .625rem;
@@ -38,13 +52,13 @@
 }
 body {
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+max-width: 100%;
+justify-content: center;
+box-sizing: border-box
+}
 
-.carousel-item img{
-  height: var(--slider-height-img);
-  width: auto;
-  border-radius: 10px;
-}					 
+		 
 .custom-navbar-cta li a img
 {
  height: var(--header-height-logo);
@@ -77,6 +91,7 @@ a {
 
 .custom-navbar {
   background: var(--header-backgroundcolor);
+  width: 100%;
   border-radius: 0px 0px 10px 10px;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -207,18 +222,18 @@ font-style: bold;
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
           top: -40px; } }
-
+.filter-form form div .col-4{
+  align-items: end;
+}
 .btn {
   font-weight: 600;
-  padding: 12px 30px;
   border-radius: 10px;
   color: #ffffff;
-  background: #2f2f2f;
-  border-color: #2f2f2f; }
+  background: #ed1c24; }
   .btn:hover {
     color: #ffffff;
-    background: #222222;
-    border-color: #222222; }
+    background: #f08080;
+    border-color: #f08080; }
   .btn:active, .btn:focus {
     outline: none !important;
     -webkit-box-shadow: none;
@@ -253,6 +268,8 @@ font-style: bold;
 
   display: flex;
   padding: 30px 30px 30px 30px;
+    overflow-x: hidden;
+  max-width: 100%;
   }
   .product-section .product-item h3 {
    text-align: start;
@@ -347,6 +364,8 @@ font-style: bold;
       height: 70%; }
 
 .why-choose-section {
+    overflow-x: hidden;
+  max-width: 100%;
   padding: 7rem 0; }
   .why-choose-section .img-wrap {
     position: relative; }
@@ -389,6 +408,8 @@ font-style: bold;
     color: #6a6a6a; }
 
 .we-help-section {
+    overflow-x: hidden;
+  max-width: 100%;
   padding: 7rem 0; }
   /* .we-help-section .imgs-grid {
     display: -ms-grid;
@@ -585,7 +606,10 @@ font-style: bold;
   padding: 20px; }
 
 .blog-section {
-  padding: 7rem 0 12rem 0; }
+  padding: 7rem 0 12rem 0; 
+  overflow-x: hidden;
+  max-width: 100%;
+}
   .blog-section .post-entry a {
     text-decoration: none; }
   .blog-section .post-entry .post-thumbnail {
@@ -612,6 +636,8 @@ font-style: bold;
     opacity: .7; }
 
 .footer-section {
+    overflow-x: hidden;
+  max-width: 100%;
   padding: 80px 0;
   background: var(--footer-backgroundcolor); }
   .footer-section .relative {

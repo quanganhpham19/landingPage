@@ -20,7 +20,7 @@
 
 	<body>
 
-				<!-- Start Header/Navigation -->
+						<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md mb-3 " arial-label="Furni navigation bar">
 
 			<div class="container">
@@ -58,164 +58,88 @@
 				<div class=" row d-flex flex-row">
 					<div class="col-12 mx-5 mt-3"><a class="" href="index.html"><span>Trang chủ</span></a>
 					<img width="16px" height="16px" src="https://img.icons8.com/?size=100&id=15812&format=png&color=6b6d6e" alt="forward"/>
-					<span>Cửa hàng</span>
+					<a class="" href="shop.html"><span>Cửa hàng</span></a>
+					<img width="16px" height="16px" src="https://img.icons8.com/?size=100&id=15812&format=png&color=6b6d6e" alt="forward"/>
+					<span>Sản phẩm</span>
 					</div>
 				
 				
 				</div>	
 			<div class="row title-page mx-5">				
-					<h1>Cửa hàng</h1>			
+					<h1>Sản phẩm</h1>			
 			</div>
 			</div>
 
 		<!-- End Hero Section -->
 
-		<div class="filter-form mb-5 container">
-			<form action="">
-			<div class="row">
-				<div class="col-lg-3 col-12">
-					<label>Sắp xếp theo:</label>
-					<select class="form-select" name="sort" id="sort">
-						<option selected>Liên quan nhất</option>
-    					<option value="1">Giá tăng dần</option>
-    					<option value="2">Giá giảm dần</option>
-    					<option value="3">Mới nhất</option>
-					</select>					
-				</div>
-				<div class="col-lg-5 col-12"></div>
-				<div class="col-lg-4 col-12 align-items-end mt-3">							
-					<div class="input-group ">
-  						<input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-      					<button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
-					</div>
-				</div>
-			</div>
-			</form>
-		</div>
-		
-		
-	
-
-
-
 		<div class="untree_co-section product-section before-footer-section">
 		    <div class="container">
-		      	<div class="row">
+		         <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6 mb-4">
+			<div class="row">
+            <img src="images/GauMarathonNam.png" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
+			</div>
+			<div class="row">
+ 			<div class="d-flex sub-product-img">
+                <img src="images/GauMarathonNam.png" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 2" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 3" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                <img src="images/GauMarathonNam.png" alt="Thumbnail 4" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+            </div>
+			</div>
+           
+        </div>
 
-		      		<!-- Start Column 1 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/GauMarathonNam.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/GauMarathonNu.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/IMG_6235.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/SoTCB.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-
-					<!-- Start Column 1 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/HeoTietKiem.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 1 -->
-						
-					<!-- Start Column 2 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/GauMarathonNam.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div> 
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/GauMarathonNu.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-6 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="images/HeoTietKiem.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<h4 class="product-price">265.000<span> VNĐ</span></h4>
-
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-		      	</div>
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h3 class="mb-3">Gấu bông marathon nam</h3>
+            <p class="text-muted mb-4">SKU: GB_TCB_001</p>
+            <div class="mb-3">
+                <span class="h4 me-2">265.000 VNĐ</span>
+                <span class="text-muted"><s>300.000 VNĐ</s></span>
+            </div>
+            <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+                <span class="ms-2">4.5 (120 reviews)</span>
+            </div>
+            <p class="mb-4">Mô tả sản phẩm: </p>
+            <div class="mb-4">
+                <h5>Color:</h5>
+                <div class="btn-group" role="group" aria-label="Color selection">
+                    <input type="radio" class="btn-check" name="color" id="black" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark" for="black">Black</label>
+                    <input type="radio" class="btn-check" name="color" id="silver" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="silver">Silver</label>
+                    <input type="radio" class="btn-check" name="color" id="blue" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="blue">Blue</label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="quantity" class="form-label">Số lượng đặt hàng:</label>
+                <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+            </div>
+            <button class="btn btn-primary btn-lg mb-3 me-2">
+                    <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
+                </button>
+            <button class="btn btn-outline-secondary btn-lg mb-3">
+                    <i class="bi bi-heart"></i> Mua ngay
+                </button>
+            <div class="mt-4">
+                <h5>Thông số sản phẩm:</h5>
+                <ul>
+                    <li>Industry-leading noise cancellation</li>
+                    <li>30-hour battery life</li>
+                    <li>Touch sensor controls</li>
+                    <li>Speak-to-chat technology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 		    </div>
 		</div>
 
@@ -328,6 +252,14 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function changeImage(event, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+</script>
 	</body>
 
 </html>

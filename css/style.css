@@ -19,7 +19,17 @@
    --product-price-color-text:#ed1c24;
    --logo-heght:30px
 }
-
+hr{
+   background: linear-gradient(to right, 
+    #e4002b 0%,     /* Màu bên trái */
+    #e4002b 25%,    /* Phần 25% đầu tiên */
+    #ccc 25%,       /* Màu còn lại */
+    #ccc 100% );
+  opacity: 1;    
+}
+.swiper-button-next,.swiper-button-prev{
+  color: #0c0c0c;
+}
 .danh-muc{
   text-decoration: none;
 }
@@ -59,7 +69,6 @@
   aspect-ratio: 2078 / 612; /* Giữ đúng tỉ lệ gốc */
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 #carouselExample .carousel-inner,
@@ -108,9 +117,23 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   width: auto;
   border-radius: 10px;
 }			 */
+
 .banner1{
-   width: 20rem;
-  height: 35rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.banner1 span a{
+text-decoration: none;
+}
+.banner1 span a:hover{
+    transform: scale(2);
+    letter-spacing: 1px;
+}
+.banner1 span {
+margin-bottom: 20px;
 }
 }
 @media (max-width: 768px) {

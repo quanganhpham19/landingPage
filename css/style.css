@@ -281,13 +281,14 @@ a {
         margin-right: 20px; }
 .title-page{
   align-items: center;
+
 }
 .hero {
   background-image: url('../images/LICH-DAI-ICHI.png');
   background-size: cover;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 2078 / 300; /* Giữ đúng tỉ lệ gốc */
+  aspect-ratio: 2078 / 400; /* Giữ đúng tỉ lệ gốc */
   margin: 0 auto;
   overflow: hidden;
 } 

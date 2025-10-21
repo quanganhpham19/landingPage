@@ -283,8 +283,12 @@ a {
 }
 .hero {
   background-image: url('../images/LICH-DAI-ICHI.png');
-   background-size: cover;
-  height: 200px;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 2078 / 612; /* Giữ đúng tỉ lệ gốc */
+  margin: 0 auto;
+  overflow: hidden;
 } 
 .hero a{
   text-decoration: none;

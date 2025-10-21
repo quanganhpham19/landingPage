@@ -278,7 +278,6 @@ a {
       .custom-navbar .custom-navbar-cta li:first-child {
         margin-right: 20px; }
 .title-page{
-  height: 100px;
   align-items: center;
 }
 .hero {
@@ -303,12 +302,9 @@ font-family: 'Roboto';
 font-size: 16px;
 font-style: bold;
 }
-.hero .row{
-
-}
   .hero p {
     color: rgba(255, 255, 255, 0.5);
-    margin-botom: 30px; }
+    margin-bottom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
     .hero .hero-img-wrap img {
@@ -435,8 +431,6 @@ font-style: bold;
       font-weight: normal;
       font-size: 1rem;
       text-decoration: none; }
-      .product-item img{
-      }
     .product-section .product-item .icon-cross {
       position: absolute;
       width: 35px;

@@ -20,6 +20,12 @@
    --logo-heght:30px
 }
 
+.img-profile{
+  width: 300px;
+}
+.w-90{
+  width: 90%;
+}
 hr{
    background: linear-gradient(to right, 
     #e4002b 0%,     /* Màu bên trái */
@@ -46,10 +52,11 @@ hr{
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   text-align: center;
   padding: 10px;
+  margin-left: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .product-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 .product-item img {
@@ -123,7 +130,6 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #f7f7f7;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  padding: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .banner1 span a{
@@ -272,13 +278,13 @@ a {
       .custom-navbar .custom-navbar-cta li:first-child {
         margin-right: 20px; }
 .title-page{
-  height: 200px;
+  height: 100px;
   align-items: center;
 }
 .hero {
   background-image: url('../images/LICH-DAI-ICHI.png');
    background-size: cover;
-  height: 300px;
+  height: 200px;
 } 
 .hero a{
   text-decoration: none;
@@ -466,7 +472,7 @@ font-style: bold;
       -o-transition: .3s all ease;
       transition: .3s all ease; }
     .product-section .product-item:hover .product-thumbnail {
-      top: -25px; }
+      top: -5px; }
     .product-section .product-item:hover .icon-cross {
       bottom: 0;
       opacity: 1;

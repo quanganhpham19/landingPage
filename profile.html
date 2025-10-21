@@ -58,90 +58,99 @@
 				<div class=" row d-flex flex-row">
 					<div class="col-12 mx-5 mt-3"><a class="" href="index.html"><span>Trang chủ</span></a>
 					<img width="16px" height="16px" src="https://img.icons8.com/?size=100&id=15812&format=png&color=6b6d6e" alt="forward"/>
-					<a class="" href="shop.html"><span>Cửa hàng</span></a>
-					<img width="16px" height="16px" src="https://img.icons8.com/?size=100&id=15812&format=png&color=6b6d6e" alt="forward"/>
-					<span>Sản phẩm</span>
+					<span>Thông tin hồ sơ</span>
 					</div>
 				
 				
 				</div>	
 			<div class="row title-page mx-5">				
-					<h1>Sản phẩm</h1>			
+					<h1>Thông tin hồ sơ</h1>			
 			</div>
 			</div>
 
 		<!-- End Hero Section -->
 
-		<div class="untree_co-section product-section before-footer-section">
-		    <div class="container">
-		         <div class="row">
-        <!-- Product Images -->
-        <div class="col-md-6 mb-4">
-			<div class="row">
-            <img src="images/GauMarathonNam.png" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
-			</div>
-			<div class="row">
- 			<div class="d-flex sub-product-img">
-                <img src="images/GauMarathonNam.png" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
-                <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 2" class="thumbnail rounded" onclick="changeImage(event, this.src)">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 3" class="thumbnail rounded" onclick="changeImage(event, this.src)">
-                <img src="images/GauMarathonNam.png" alt="Thumbnail 4" class="thumbnail rounded" onclick="changeImage(event, this.src)">
-            </div>
-			</div>
-           
-        </div>
-
-        <!-- Product Details -->
-        <div class="col-md-6">
-            <h3 class="mb-3">Gấu bông marathon nam</h3>
-            <p class="text-muted mb-4">SKU: GB_TCB_001</p>
-            <div class="mb-3">
-                <span class="h4 me-2">265.000 VNĐ</span>
-                <span class="text-muted"><s>300.000 VNĐ</s></span>
-            </div>
-            <div class="mb-3">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span class="ms-2">4.5 (120 reviews)</span>
-            </div>
-            <p class="mb-4">Mô tả sản phẩm: </p>
-            <div class="mb-4">
-                <h5>Color:</h5>
-                <div class="btn-group" role="group" aria-label="Color selection">
-                    <input type="radio" class="btn-check" name="color" id="black" autocomplete="off" checked>
-                    <label class="btn btn-outline-dark" for="black">Black</label>
-                    <input type="radio" class="btn-check" name="color" id="silver" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="silver">Silver</label>
-                    <input type="radio" class="btn-check" name="color" id="blue" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="blue">Blue</label>
+        <!-- Profile Information -->
+ <div class="container-xl px-4 mt-4">
+    <div class="row">
+        <div class="col-xl-3">
+            <!-- Profile picture card-->
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-header">Ảnh đại diện</div>
+                <div class="card-body text-center">
+                    <!-- Profile picture image-->
+                    <img class="img-account-profile rounded-circle mb-2 w-90" src="/images/account.png" alt="">
+                    <!-- Profile picture help block-->
+                    <div class="small font-italic text-muted mb-4">JPG hoặc PNG không quá 5 MB</div>
+                    <!-- Profile picture upload button-->
+                    <button class="btn btn-primary"  type="button">Tải ảnh lên</button>
                 </div>
             </div>
-            <div class="mb-4">
-                <label for="quantity" class="form-label">Số lượng đặt hàng:</label>
-                <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
-            </div>
-            <button class="btn btn-primary btn-lg mb-3 me-2">
-                    <i class="bi bi-cart-plus"></i> Thêm vào giỏ hàng
-                </button>
-            <button class="btn btn-outline-secondary btn-lg mb-3">
-                    <i class="bi bi-heart"></i> Mua ngay
-                </button>
-            <div class="mt-4">
-                <h5>Thông số sản phẩm:</h5>
-                <ul>
-                    <li>Industry-leading noise cancellation</li>
-                    <li>30-hour battery life</li>
-                    <li>Touch sensor controls</li>
-                    <li>Speak-to-chat technology</li>
-                </ul>
+        </div>
+        <div class="col-xl-9">
+            <!-- Account details card-->
+            <div class="card mb-4">
+                <div class="card-header">Thông tin</div>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (username)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputUsername">Username</label>
+                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (first name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                            </div>
+                            <!-- Form Group (last name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                            </div>
+                        </div>
+                        <!-- Form Row        -->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (organization name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
+                            </div>
+                            <!-- Form Group (location)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+                            </div>
+                        </div>
+                        <!-- Form Group (email address)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (phone number)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                            </div>
+                            <!-- Form Group (birthday)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988">
+                            </div>
+                        </div>
+                        <!-- Save changes button-->
+                        <button class="btn btn-primary" type="button">Save changes</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-		    </div>
-		</div>
+</div>
+		<!-- End Profile Information -->
 
 		<!-- Start Footer Section -->
 		<footer class="footer-section">

@@ -20,9 +20,6 @@
    --logo-heght:30px
 }
 
-.img-profile{
-  width: 300px;
-}
 .w-90{
   width: 90%;
 }
@@ -37,15 +34,7 @@ hr{
 .swiper-button-next,.swiper-button-prev{
   color: #0c0c0c;
 }
-.danh-muc{
-  text-decoration: none;
-}
 /* ===== LƯỚI SẢN PHẨM ===== */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-}
 .product-item {
   background: #fff;
   border-radius: 8px;
@@ -154,11 +143,6 @@ padding-left: 10px;
 .banner1{
  display: none;
 }
-}
-.form-floating>.form-select {
-    padding-top: 1.625rem;
-    padding-bottom: .625rem;
-    padding-left: .75rem;
 }
 .intro-excerpt{
   font-size: 20px;
@@ -345,9 +329,6 @@ font-style: bold;
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
           top: -40px; } }
-.filter-form form div .col-4{
-  align-items: end;
-}
 .btn {
   font-weight: 600;
   border-radius: 10px;
@@ -638,8 +619,6 @@ font-style: bold;
 
 .testimonial-slider-wrap {
   position: relative; }
-  .testimonial-slider-wrap .tns-inner {
-    padding-top: 30px; }
   .testimonial-slider-wrap .item .testimonial-block blockquote {
     font-size: 16px; }
     @media (min-width: 768px) {
@@ -903,6 +882,5 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
-
 
 

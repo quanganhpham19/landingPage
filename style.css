@@ -1,0 +1,233 @@
+
+
+:root {
+  --primary-color: #0078d7;
+  --primary-dark: #005fa3;
+  --accent-color: #00a2ff;
+  --text-color: #333333;
+  --muted-text: #777777;
+  --bg-color: #f9fcff;
+  --card-bg: #ffffff;
+  --border-radius: 12px;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --font-family: "Inter", sans-serif;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f6f7;
+  color: #333;
+}
+.navbar-brand {
+  font-weight: 800;
+  color: #2f6f93;
+}
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  color: #444;
+  font-weight: 700;
+}
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4aa3d6, #2f6f93);
+  border-radius: 5px;
+  margin: 10px auto 30px;
+}
+.product-card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(32, 40, 50, 0.08);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.product-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: contain;
+  background: #f0f6fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+.product-card img:hover{
+    margin-bottom: 30px;
+    top: 0;
+    -webkit-transition: .3s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+}
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ef6b6b;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price {
+  font-weight: 700;
+  color: #2f6f93;
+}
+.price small {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+}
+footer {
+  background: #fff;
+  padding: 40px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer p,
+footer a {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.made-by {
+  background-color: #438db8;
+}
+.cart-header {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2f6f93;
+}
+.cart-table th {
+  background: #f0f6fa;
+  color: #2f6f93;
+}
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.cart-summary {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(32, 40, 50, 0.08);
+  padding: 20px;
+}
+.checkout-btn {
+  background: #2f6f93;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 100%;
+  font-weight: 600;
+}
+.checkout-btn:hover {
+  background: #4aa3d6;
+}
+
+.product-gallery img {
+  border-radius: 10px;
+}
+.thumbnail img {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.thumbnail img:hover {
+  opacity: 1;
+}
+.btn-primary {
+  background-color: #0078d7;
+  border: none;
+}
+.btn-outline-primary {
+  border-color: #0078d7;
+  color: #0078d7;
+}
+.btn-outline-primary:hover {
+  background-color: #0078d7;
+  color: white;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+.sidebar .nav-link {
+  color: #333;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background-color: #0078d7;
+  color: #fff;
+}
+.profile-header {
+  background: #0078d7;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.order-card {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 15px;
+  background: #fff;
+  transition: 0.3s;
+}
+.order-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.img-product-detail {
+  height: 25rem;
+}

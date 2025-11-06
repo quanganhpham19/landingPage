@@ -23,8 +23,8 @@ async function loadProductDetail() {
       console.log("📦 Dữ liệu sản phẩm:", data);
 
       // Hiển thị dữ liệu lên HTML
-      document.querySelector("h2.fw-bold").textContent = data.name;
-      document.querySelector(".price").textContent = `${Number(data.price).toLocaleString()}₫`;
+      document.querySelector("h2.fw-bold").textContent ='Tên sản phẩm:'+ data.name;
+      document.querySelector(".price").textContent = `Giá sản phẩm: ${Number(data.price).toLocaleString()}₫`;
       document.querySelector("#mainImage").src = data.image;
 
       // 👉 Thêm sự kiện nút giỏ hàng ở đây

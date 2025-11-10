@@ -61,7 +61,7 @@ function addToCart(id, product) {
       name: product.name,
       price: Number(product.price),
       image: product.image,
-      quantity: 1,
+      quantity: Number(pQuantity),
     });
   }
   console.log("quantity", pQuantity);

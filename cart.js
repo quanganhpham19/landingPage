@@ -3,14 +3,18 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const cartBody = document.getElementById("cart-body");
 const cartTotal = document.getElementById("cart-total");
+const cartFee = document.getElementById("cart-fee");
+const shipFee = document.getElementById("ship-fee");
 
 // 🧮 Hàm tính tổng tiền
 function updateTotal() {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  cartTotal.textContent = total.toLocaleString() + "₫";
+  cartFee.textContent = total.toLocaleString() + "₫";
+  const ship=20000;
+  cartTotal.textContent=(ship+total).toLocaleString()+"₫";
+  shipFee.textContent=ship.toLocaleString()+"₫"
   localStorage.setItem("cart", JSON.stringify(cart));
 }
-
 // 🗑️ Hàm xóa sản phẩm
 function removeItem(id) {
   cart = cart.filter(item => item.id !== id);

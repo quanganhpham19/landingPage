@@ -1,5 +1,8 @@
 import { db } from "./firebaseConfig.js";
-import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import {
+  doc,
+  getDoc,
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 // Hàm đọc ID từ URL
 function getProductIdFromURL() {
@@ -23,8 +26,11 @@ async function loadProductDetail() {
       console.log("📦 Dữ liệu sản phẩm:", data);
 
       // Hiển thị dữ liệu lên HTML
-      document.querySelector("h2.fw-bold").textContent ='Tên sản phẩm:'+ data.name;
-      document.querySelector(".price").textContent = `Giá sản phẩm: ${Number(data.price).toLocaleString()}₫`;
+      document.querySelector("h2.fw-bold").textContent =
+        "Tên sản phẩm:" + data.name;
+      document.querySelector(".price").textContent = `Giá sản phẩm: ${Number(
+        data.price
+      ).toLocaleString()}₫`;
       document.querySelector("#mainImage").src = data.image;
 
       // 👉 Thêm sự kiện nút giỏ hàng ở đây
@@ -46,9 +52,9 @@ document.addEventListener("DOMContentLoaded", loadProductDetail);
 function addToCart(id, product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const existing = cart.find((item) => item.id === id);
-
+  const pQuantity = document.getElementById("quantity").value;
   if (existing) {
-    existing.quantity += 1;
+    existing.quantity += Number(pQuantity);
   } else {
     cart.push({
       id: id,
@@ -58,7 +64,7 @@ function addToCart(id, product) {
       quantity: 1,
     });
   }
-
+  console.log("quantity", pQuantity);
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("🛍️ Đã thêm sản phẩm vào giỏ hàng!");
 }

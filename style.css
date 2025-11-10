@@ -231,3 +231,63 @@ footer a {
 .img-product-detail {
   height: 25rem;
 }
+.product-card {
+  background-color: #f9fbfd;
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.discount-badge {
+  font-size: 0.8rem;
+}
+
+.price {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.mySwiper {
+  padding: 20px 10px 50px;
+}
+
+.product-card {
+  background-color: #f9fbfd;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ed1c24;
+}
+
+.product-card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
